@@ -1,3 +1,4 @@
+/* styles.css */
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
 }
 .converter-container {
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
 }
 .converter-card {
   background: #ffffffcc;
@@ -31,13 +32,14 @@ body {
   gap: 12px;
 }
 .input-group input {
-  padding: 12px;
+  width: 100%;
+  padding: 14px;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   background: #ecf0f1;
   color: #2c3e50;
-  width: 100%;
+  box-sizing: border-box;
 }
 .select-group {
   display: flex;
@@ -46,15 +48,15 @@ body {
   flex-wrap: wrap;
 }
 .select-group select {
-  flex: 1;
-  min-width: 100px;
-  padding: 12px;
+  flex: 1 1 45%;
+  padding: 14px;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   appearance: none;
   background: #ecf0f1;
   color: #2c3e50;
+  box-sizing: border-box;
 }
 .output {
   margin-top: 24px;
@@ -79,8 +81,10 @@ body {
   .select-group {
     flex-direction: column;
   }
+  .select-group select {
+    flex: 1 1 100%;
+  }
   .output span {
     font-size: 1.5rem;
   }
 }
-  
